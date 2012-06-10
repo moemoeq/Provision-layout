@@ -1,0 +1,34 @@
+﻿@charset "utf-8";
+/* 조채연이 맥콜을 쳐마시면서 발로 코딩함 대략적인 코딩규칙은 NHN 코딩 컨벤션에 규약해서 발코딩함 */
+@font-face{font-family:'NG';font-weight:normal;font-style:normal;src:url("./font/NanumGothic.eot")}
+@font-face{font-family:'NG';font-weight:normal;font-style:normal;src:url("./font/NanumGothic.woff") format('woff'),url("./font/NanumGothic.ttf")  format('truetype')}
+a, a > *{text-decoration:none;-webkit-transition:background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out;-moz-transition:background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out;-ms-transition:background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out;-o-transition:background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out}
+/* full clearfix */
+/* add to floating elements which shall clear floating after themselves */ 
+/* IE5-6 */
+* html .clearfix{height:1%}
+/* IE7not8 */
+*+html .clearfix{display:inline-block}
+body{margin:auto;font-family:'NG','gulim','Helvetica','Arial','Dotum','돋움';font-size:13px;color:#BBB;background:#272d33}
+ /* FF, IE8, O, S, etc. */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+img{border:0}
+.blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+#wrapbg{height:100%;z-index:30;margin:0 auto;background-image:linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-o-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-moz-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-webkit-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-ms-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-webkit-gradient(linear,left bottom,color-stop(0.1,rgb(39,45,51)), color-stop(0.6,rgb(0,0,0)))}
+#wrap{width:970px;z-index:30;margin:0 auto;background-image:linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-o-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-moz-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-webkit-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-ms-linear-gradient(bottom, rgb(39,45,51) 10%, rgb(0,0,0) 60%);background-image:-webkit-gradient(linear,left bottom,color-stop(0.1,rgb(39,45,51)), color-stop(0.6,rgb(0,0,0)))}
+#header{width:970px;height:61px;margin-bottom:58px;margin-right:auto;margin-left:auto}
+#logo{float:left;margin-top:50px;margin-right:15px;margin-left:10px;height:40px}
+	
+	/* -------------------------------------------------- */
+	/*	Main Navigation
+	/* -------------------------------------------------- */
+	
+#main-nav{float:right;margin-top:31px;margin-right:10px}
+#main-nav > ul{margin:-6px 0 0}
+#main-nav li{border-bottom:2px solid transparent;border-bottom-color:#33B5E5;list-style:none;float:left;margin:0;position:relative;width:134px;height:61px}
+#main-nav a{border-bottom:6px solid transparent;color:#c0c0c0;font-family:'NG','gulim','Helvetica','Arial','Dotum','돋움';font-size:12px;font-weight:bold;display:block;padding:26px 20px 15px;position:relative;text-align:center;z-index:98}
+.ie7 #main-nav a{padding:33px 20px}
+#main-nav a:hover, #main-nav .hover > a, #main-nav .active> a{border-bottom-color:#33B5E5;color:#FFFFFF}
+#content{text-align:center;margin-top:10px}
+#footer{text-align:right;font-size:10px;margin-top:10px;height:43px ;margin-right:10px;margin-left:10px}
+

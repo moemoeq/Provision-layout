@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.2">
+    <title xml:lang="ko">Provision 공식 사이트 레이아웃</title>
+    <description xml:lang="ko">
+        Provision 롬 공식 사이트 레이아웃입니다.
+        제작 : 조채연
+    </description>  
+    <version>0.1</version>
+    <date>2012-04-07</date>
+    <link>http://dkserver.wo.tc/</link>
+
+    <author email_address="stoutcho21@gmail.com" link="http://dkserver.wo.tc/">
+        <name xml:lang="ko">조채연</name>
+    </author>
+
+    <extra_vars>
+        <var name="logo_image" type="image">
+			<title xml:lang="ko">로고이미지</title>
+        </var>
+		<var name="logo_image_alt" type="text">
+			<title xml:lang="ko">로고 이미지 alt</title>
+        </var>
+        <var name="index_url" type="text">
+			<title xml:lang="ko">로고 링크 URL</title>
+        </var>
+		<var name="footer" type="textarea">
+            <title xml:lang="ko">하단 푸터 텍스트(HTML)</title>
+        </var>
+    </extra_vars>
+
+    <menus>
+        <menu name="global_menu" maxdepth="3" default="true">
+            <title xml:lang="ko">상단 메뉴</title>
+        </menu>
+    </menus>
+</layout>

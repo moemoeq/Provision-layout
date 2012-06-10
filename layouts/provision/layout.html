@@ -1,0 +1,25 @@
+<load target="user_layout.css" />
+<div id="wrapbg">
+<div id="wrap">
+<header id="header" >
+<a href="#content" class="blind">본문 바로가기/Go to Content</a>
+<a href="{$layout_info->index_url}" cond="$layout_info->logo_image" id="logo"><img src="{$layout_info->logo_image}" alt="{$layout_info->logo_image_alt}" class="iePngFix" /></a>
+<nav id="main-nav">
+<ul>
+<li loop="$global_menu->list=>$key1,$val1" class="active"|cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a></li>
+</ul>
+</nav>
+</header>
+
+<article>
+<div id="content">
+{$content}
+</div>
+</article>
+
+<footer id="footer">
+<br>
+{$layout_info->footer}
+</footer>
+</div>
+</div>
